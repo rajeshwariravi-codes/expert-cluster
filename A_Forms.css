@@ -1,0 +1,300 @@
+    @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Cinzel:wght@400..900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Text+Me+One&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+    .Wrapper {
+        width: 100%;
+        max-width: 900px;
+        border-radius: 40px;
+        overflow: hidden;
+        padding: 20px 0px;
+        border-radius: 25px;
+        /* 239, 219, 239, 0.1 */
+        background-color: rgba(74, 69, 85, 0.5);
+        color: white;
+        border: none;
+        box-shadow: 0 10px 30px rgba(73, 11, 89, 0.15);
+    }
+
+    .Title {
+        font-family: "Josefin Sans";
+        font-size: clamp(1.5rem, 2vw, 2.5rem);
+        font-weight: 400;
+    }
+
+    .Description {
+        font-family: "Cormorant Upright";
+        font-size: clamp(1.1rem, 1.3vw, 2rem);
+        font-weight: 300;
+    }
+
+    .Quote::before {
+        content: "“";
+    }
+
+    .Quote::after {
+        content: "”";
+    }
+
+    .Bottom a {
+        text-decoration: none;
+        color: white;
+        font-family: "Cinzel";
+        font-size: clamp(1rem, 1.5vw, 2rem);
+        font-weight: 600;
+    }
+
+    /* Form Style */
+
+    .Form-Wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Form {
+        padding: 20px 25px;
+    }
+
+    .form-group {
+        margin-bottom: 0.8rem;
+        position: relative;
+    }
+
+    .form-control,
+    .form-select,
+    .form-control-file {
+        border: 2px solid rgba(239, 233, 238, 0.5);
+        border-radius: 6px;
+        padding: 10px 12px;
+        font-family: "Cormorant Upright";
+        font-weight: 900;
+        font-size: clamp(0.8rem, 1vw, 1.3rem);
+        transition: All 0.3s ease;
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        height: 42px;
+        width: 100%;
+    }
+
+    .form-control:focus,
+    .form-control-file:focus {
+        color: #ffffffff;
+        font-size: clamp(0.8rem, 1.3vw, 1.8rem);
+        font-weight: 600;
+        border-color: #260523c2;
+        box-shadow: 0 0 0 0.2rem rgba(12, 0, 14, 0.25);
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    .form-select:focus {
+        color: #ffffffff;
+        font-weight: 600;
+        border-color: #260523c2;
+        box-shadow: 0 0 0 0.2rem rgba(12, 0, 14, 0.25);
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"]:not(:placeholder-shown),
+    input[type="phone"]:not(:placeholder-shown),
+    input[type="email"]:not(:placeholder-shown),
+    input[type="Password"]:not(:placeholder-shown),
+    input[type="file"]:not(:placeholder-shown),
+    .form-group textarea {
+        color: #ffffffff;
+    }
+
+    .Radio-Value {
+        font-family: "Cormorant Upright";
+        font-weight: 400;
+        font-size: clamp(0.8rem, 1.3vw, 1.8rem);
+    }
+
+    .form-control::placeholder,
+    .form-control-file::placeholder {
+        color: #d5ccdaff;
+        font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+        opacity: 0.9;
+    }
+
+    .form-select {
+        color: #ffffffff;
+        font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+    }
+
+    .form-select option {
+        font-family: "Josefin Sans";
+        background: rgba(232, 212, 237, 0.8);
+        border-radius: 12px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+        border: none;
+        color: rgba(29, 3, 36, 0.8);
+        font-weight: 500;
+    }
+
+    .form-group textarea {
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    .form-select textarea::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Optional: make file input and preview look nicer */
+    .File-Group input[type="file"] {
+        width: 100%;
+        /* full width of column */
+        border-radius: 8px;
+        padding: 5px;
+    }
+
+    /* Preview image styling */
+    .File-Group img {
+        width: auto;
+        max-width: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+
+    label {
+        font-weight: 600;
+        color: #ffffffff;
+        margin-bottom: 6px;
+        display: block;
+        font-family: "Cormorant Upright";
+        font-size: clamp(1rem, 1.3vw, 1.5rem);
+    }
+
+    .Input-Icon {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        color: #d9c2e6ff;
+        pointer-events: none;
+    }
+
+    .Warning {
+        color: #ffffffff;
+        font-family: "Text Me One";
+        font-weight: 300;
+        font-size: clamp(0.5rem, 1.2vw, 1rem);
+    }
+
+    .Button button {
+        background: linear-gradient(180deg, #581ecc 0%, #7c3cd0 100%) !important;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 25px;
+        font-family: "Cinzel";
+        font-weight: 500;
+        font-size: clamp(1rem, 1.5vw, 2rem);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    /* Calander */
+
+    .flatpickr-calendar {
+        font-family: "Cormorant Upright";
+        background: rgba(232, 212, 237, 0.8);
+        border-radius: 12px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+        border: none;
+    }
+
+    .flatpickr-current-month {
+        font-weight: 200;
+        letter-spacing: 0.3px;
+        color: rgba(29, 3, 36, 0.8);
+    }
+
+    .flatpickr-weekdays {
+        background: rgba(196, 26, 54, 0.3);
+    }
+
+    .flatpickr-weekday {
+        color: #b8a594ff;
+        font-weight: 500;
+    }
+
+    .flatpickr-day {
+        color: #10011eff;
+    }
+
+    .flatpickr-day:hover {
+        background: #10011eff;
+        color: #ffffff;
+    }
+
+    /* Select 2 */
+
+    .select2-container .select2-selection--multiple {
+        min-height: 42px;
+        background: rgba(0, 0, 0, 0.1);
+        border: 2px solid rgba(239, 233, 238, 0.5);
+        border-radius: 6px;
+        font-family: "Cormorant Upright";
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-search__field::placeholder {
+        font-family: "Cormorant Upright";
+        font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+        color: #daccccff;
+        opacity: 0.7;
+    }
+
+    .select2-container .select2-selection--multiple:hover,
+    .select2-container--focus .select2-selection--multiple {
+        color: #d9c2e6ff;
+        border-color: #260523c2;
+        box-shadow: 0 0 0 0.2rem rgba(12, 0, 14, 0.25);
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    .select2-selection__choice {
+        background: #ffffff;
+        color: rgba(0, 0, 0, 1);
+        border: none;
+        font-weight: 700;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-search__Field::placeholder {
+        font-family: "Cormorant Upright";
+        font-size: 1rem;
+        font-weight: 600;
+        color: #d5ccdaff;
+        opacity: 0.75;
+    }
+
+    .select2-container--default .select2-dropdown {
+        background: rgba(232, 212, 237, 0.9);
+        border: none;
+        border-radius: 8px;
+    }
+
+    .select2-container--default .select2-results__option {
+        font-family: "Cormorant Upright", serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.6rem 3rem;
+        color: rgba(0, 0, 0, 1);
+        transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+        background: rgba(196, 26, 54, 0.5);
+        color: #ffffff !important;
+    }
+
+    .select2-container--default .select2-results__options {
+        max-height: 240px;
+        overflow-y: auto;
+
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE / Edge legacy */
+    }
+
+    /* Chrome, Edge, Safari */
+    .select2-container--default .select2-results__options::-webkit-scrollbar {
+        display: none;
+    }

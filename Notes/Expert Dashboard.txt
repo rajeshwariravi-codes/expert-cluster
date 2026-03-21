@@ -1,0 +1,115 @@
+Expert Dashboard
+------ ---------
+
+-> Sign Up
+   ---- --
+
+---> Registration Form
+
+-> Sign In
+   ---- --
+
+-> Dashboard
+   ---------
+
+-> Profile
+   -------
+
+---> Details
+---> Edit Profile
+---> Edit Password
+---> Edit Profile Pic
+
+-> Streams Details (Table View)
+   ------- ------- ------ -----
+ 
+-> Query Inbox
+   ----- -----
+
+---> Query From Selecting Streams
+---> Query From Selecting That Particular Expert
+
+-> Question Paper Creation
+   -------- ----- --------
+
+---> Insert Form
+
+-------> Test Basic Details
+-------> Question With Answer
+
+---> Question Paper View (With Answer)
+
+-> Test Paper Correction
+   ---- ----- ----------
+
+-> Details Of Seekers Who Attended The Test With Marks
+   ------- -- ------- --- -------- --- ---- ---- -----
+
+-> That Particular Expert Answer
+   ---- ---------- ------ ------
+
+---> Answer With Query From Selecting Streams
+---> Answer With Query From Selecting That Particular Expert
+
+-> Query And Answers From Others (Streams == "Experts Streams")
+   ----- --- ------- ---- ------ -------- -- -------- ---------
+
+-> Overall Queries With Answers (Separated by Query Creating like Streams Based and Experts Based )
+   ------- ------- ---- ------- ---------- -- ----- -------- ---- ------- ----- --- ------- -------
+
+-> Feedback
+   --------
+
+---> Corrected Test Papers
+
+-------> From Corrected Test Papers
+
+-> Reports
+   -------
+
+---> Query Rep
+
+-------> Reports From Stream Query
+-------> Reports From Expert Query
+
+---> Corrected Test Papers Rep
+
+-------> Reports From Corrected Test Papers
+
+-> Website Feed and Report
+   ------- ---- --- ------
+
+---> Feedback Form
+---> Report Form
+
+-> Reports To Resolve
+   ------- -- -------
+
+---> Answer Rep
+
+-------> Reports From Answers (Stream Query)
+-------> Reports From Answers (Expert Query)
+
+---> Test Rep
+
+-------> Reports From Test
+
+-> Feedback Notes
+   -------- -----
+
+---> Answer Rep
+
+-------> Seekers Feedback Notes to View
+
+---> Test
+
+-------> Seekers Feedback Notes to View
+
+-> Live Chat
+   ---- ----
+
+---> With Admin
+---> With Seekers
+
+-> Logout
+   ------

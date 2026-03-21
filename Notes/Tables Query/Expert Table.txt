@@ -1,0 +1,61 @@
+if ($Connection) {
+    $Table_Query = CREATE TABLE Expert ( 
+    `S_No` int(11) AUTO_INCREMENT PRIMARY KEY, 
+    `Expert_ID` varchar(25) NOT NULL UNIQUE,
+    `Reg_Time` timestamp NOT NULL DEFAULT current_timestamp(),
+    `First_Name` varchar(50) NOT NULL,
+    `Last_Name` varchar(50) NOT NULL,
+    `Date_Of_Birth` date NOT NULL,
+    `Age` int(11) NOT NULL,
+    `Gender` varchar(10) NOT NULL,
+    `Phone_Number` varchar(15) NOT NULL,
+    `E_Mail` varchar(100) NOT NULL,
+    `Password` varchar(225) NOT NULL,
+    `Profile_Pic` varchar(100) NOT NULL,
+    `City` varchar(50) NOT NULL,
+    `Country` varchar(50) NOT NULL,
+    `Qualification` varchar(100) NOT NULL,
+    `Expert_In` text NOT NULL,
+    `Professional_Certification` varchar(150) NOT NULL,
+    `Designation` varchar(100) NOT NULL,
+    `Organization_Name` varchar(150) NOT NULL,
+    `Years_of_Experience` decimal(3,1) NOT NULL,
+    `Resume` varchar(150) NOT NULL,
+    `Access_Gate` varchar(50) NOT NULL DEFAULT 'Under Review',
+    `Verification_Code` varchar(50) NOT NULL,
+    `Login_Status` varchar(20) DEFAULT NULL,
+    `Checking_Status` varchar(10) DEFAULT NULL
+);
+
+CREATE TABLE `Expert_Streams` (
+    `Expert_ID` varchar(25) NOT NULL,
+    `Stream_ID` varchar(50) NOT NULL,
+    `Stream_Name` varchar(50) NOT NULL,
+    PRIMARY KEY (`Expert_ID`, `Stream_ID`),
+    FOREIGN KEY (`Expert_ID`) REFERENCES `Expert` (`Expert_ID`) 
+        ON DELETE CASCADE 
+        ON UPDATE CASCADE
+);
+
+CREATE TABLE `Expert_Tags` (
+    `Expert_ID` varchar(25) NOT NULL,
+    `Tag_No` int(11) NOT NULL,
+    `Tags_Keywords` varchar(50) NOT NULL,
+    PRIMARY KEY (`Expert_ID`, `Tag_No`),
+    FOREIGN KEY (`Expert_ID`) REFERENCES `Expert` (`Expert_ID`) 
+        ON DELETE CASCADE 
+        ON UPDATE CASCADE
+);
+
+
+    if ($Connection-multi_query($Table_Query)) {
+        do {
+            if ($result = $Connection-store_result()) {
+                $result-free();
+            }
+        } while ($Connection-next_result());
+        echo All tables created successfully.;
+    } else {
+        echo Error creating tables  . $Connection-error;
+    }
+}

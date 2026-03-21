@@ -1,0 +1,23 @@
+CREATE TABLE `Streams` (
+  `S_No` int(11) AUTO_INCREMENT PRIMARY KEY,
+  `Subject_Reg_Time` timestamp NOT NULL DEFAULT current_timestamp(),
+  `Stream_ID` varchar(50) UNIQUE NOT NULL,
+  `Stream_Category` varchar(50) NOT NULL,
+  `Stream_Type` varchar(100) NOT NULL,
+  `Stream` varchar(255) NOT NULL,
+  `Stream_Description` mediumtext NOT NULL,
+  `Stream_Image` varchar(255) DEFAULT NULL,
+  `Access_Gate` varchar(50) DEFAULT 'Grant'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+CREATE TABLE `Stream_Tags` (
+  `Stream_ID` varchar(50) NOT NULL,
+  `Tag_No` int(11) NOT NULL,
+  `Tag_Keywords` varchar(50) NOT NULL,
+  PRIMARY KEY (`Stream_ID`, `Tag_No`),
+  FOREIGN KEY (`Stream_ID`) REFERENCES `Streams` (`Stream_ID`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+html_entity_decode 

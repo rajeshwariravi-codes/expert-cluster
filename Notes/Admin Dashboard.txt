@@ -1,0 +1,119 @@
+Admin Dashboard
+----- ---------
+
+-> Sign In
+   ---- --
+
+-> Dashboard
+   ---------
+
+-> Experts Details
+   ------- -------
+
+---> Appointing Experts(Status == "Grant") (Form)
+---> Permissions For The Experts 
+
+-------> Granting (Status == "Grant")
+-------> Removing (Status == "Deny")
+-------> Removed Experts To Work (Status == "Grant") Where (Status == "Deny")
+
+-> Seekers Details
+   ------- -------
+---> Permissions For The Seekers
+
+-------> Granting (Status == "Grant")
+-------> Removing (Status == "Deny")
+
+-> Streams Details
+   ------- -------
+-------> Adding Streams (Status == "Grant")
+-------> Removing (Status == "Grant")
+
+-> Details To Show
+   ------- -- ----
+
+---> Experts Details
+---> Seekers Details
+---> Streams Details
+
+-> Query Details
+   ----- -------
+
+---> Query Info ( Created By Selecting Streams, With Feedback )
+---> Query Info ( Created By Selecting Experts, With Feedback )
+
+-> Answer Details
+   ------ -------
+
+---> Answer Info With Query ( Created By Selecting Streams, With Feedback )
+---> Answer Info With Query ( Created By Selecting Experts, With Feedback )
+
+-> Question Papers And Answer Details
+   -------- ------ --- ------ -------
+
+---> Question Paper Details
+---> Answer Details
+---> Test Stat
+
+-> Experts Feed and Report
+   ------- ---- --- ------
+
+---> Experts Feedback
+---> Experts Report
+
+-> Query Feed and Report
+   ----- ---- --- ------
+
+---> Query Report
+
+-> Answer Feed and Report
+   ------ ---- --- ------
+
+---> Answer Feedback
+---> Answer Report
+
+-> Experts Feed and Report For Test
+   ------- ---- --- ------ --- ----
+
+---> Experts Feedback
+---> Experts Report
+
+-> Seekers Feed and Report For Test
+   ------- ---- --- ------ --- ----
+
+---> Seekers Feedback
+---> Seekers Report
+
+-> Question Paper Feed and Report (Given By Seekers)
+   -------- ----- ---- --- ------ ------ -- --------
+
+---> Question Paper Feedback
+---> Question Paper Report
+
+-> Answer Feed and Report (Given By Experts)
+   ------ ---- --- ------ ------ -- --------
+
+---> Answer Feedback
+---> Answer Report
+
+-> Website Feed and Report
+   ------- ---- --- ------
+
+---> By Experts
+
+-------> Website Feedback
+-------> Website Report
+
+---> By Seekers
+
+-------> Website Feedback
+-------> Website Report
+
+-> Live Chat 
+   ---- ----
+
+---> With Experts
+---> With Seekers
+
+-> Logout
+   ------

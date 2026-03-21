@@ -1,0 +1,106 @@
+Seekers Dashboard
+------- ---------
+
+-> Sign Up
+   ---- --
+
+---> Registration Form
+
+-> Sign In
+   ---- --
+
+-> Profile
+   -------
+
+---> Details
+---> Edit Profile
+---> Edit Password
+---> Edit Profile Pic
+
+-> Basic Table View
+   ----- ----- ----
+
+---> Streams Details (Table View)
+---> Experts Details (Table View)
+
+-> Create Query
+   ------ -----
+
+---> Query By Streams
+---> Query By Experts
+
+-> Answer Inbox
+   ------ -----
+
+---> Answers (For Streams Query)
+---> Answers (For Experts Query)
+
+-> Test 
+   ----
+
+---> Attending The Test
+---> View Marks
+
+-> Overall Queries With Answers (Separated by Query Creating like Streams Based and Experts Based )
+   ------- ------- ---- ------- ---------- -- ----- -------- ---- ------- ----- --- ------- -------
+
+-> Feedback
+   --------
+
+---> Answers Feed
+
+-------> Feedback From Stream Query
+-------> Feedback From Expert Query
+
+-> Feedback
+   --------
+
+---> Test Papers
+
+-------> Test Papers
+
+-> Reports
+   -------
+
+---> Answers Rep
+
+-------> Reports From Stream Query
+-------> Reports From Expert Query
+
+---> Test Rep
+
+-------> Reports From Test
+
+-> Website Feed and Report
+   ------- ---- --- ------
+
+---> Feedback Form
+---> Report Form
+
+-> Reports To Resolve
+   ------- -- -------
+
+---> Query Rep
+
+-------> Reports From Stream Query
+-------> Reports From Expert Query
+
+---> Test Rep
+
+-------> Reports From Test (View)
+
+-> Feedback Notes
+   -------- -----
+
+---> Test
+
+-------> Expert Feedback Notes to View
+
+-> Live Chat
+   ---- ----
+
+---> With Experts
+---> With Seekers
+
+-> Logout
+   ------

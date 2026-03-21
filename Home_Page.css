@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Bytesized&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tektur:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    /* background: url("/Expert_Cluster_Images/Expert_Cluster_Image_5.jpg"); */
+    background: radial-gradient(circle at top, #060d2f, #070f39);
+    color: #2c2c2c;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 16px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('Expert_Cluster_Images/Expert_Cluster_Image_4.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ffd86f;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #ffd86f;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #ffd86f;
+}
+
+.btn {
+    background: linear-gradient(135deg, #ffd86f, #ffb703);
+    padding: 7px 18px;
+    border-radius: 30px;
+    color: #3f2b96 !important;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(255, 216, 111, 0.45);
+}
+
+.btn-outline {
+    border: 2px solid #ffd86f;
+    padding: 6px 18px;
+    border-radius: 30px;
+}
+
+.hero {
+    padding: 130px 20px;
+    text-align: center;
+    background: url('Expert\ Cluster\ Images/Expert_Cluster_Image_4.jpg') no-repeat center center/cover;
+    color: white;
+    clip-path: ellipse(100% 90% at 50% 0%)
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.hero span {
+    color: #ffd86f;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 22px auto;
+    max-width: 650px;
+    opacity: 0.95;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    margin: 12px;
+    padding: 14px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.35s ease;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #ffd86f, #ffb703);
+    color: #3f2b96;
+    box-shadow: 0 10px 30px rgba(255, 216, 111, 0.45);
+}
+
+.primary-btn:hover {
+    transform: translateY(-5px);
+}
+
+.secondary-btn {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background: #ffffff;
+    color: #3f2b96;
+}
+
+.quotes {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.quotes h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #3f2b96;
+}
+
+.quote-box p {
+    max-width: 700px;
+    margin: 18px auto;
+    font-size: 17px;
+    font-style: italic;
+    color: #555;
+    position: relative;
+}
+
+.quote-box p::before {
+    content: "*";
+    font-size: 40px;
+    color: #ffd86f;
+    position: absolute;
+    left: 60px;
+    top: 2px;
+}
+
+.features {
+    background: #ffffff;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    color: #3f2b96;
+}
+
+.feature-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    padding: 35px 25px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #f0f3ff);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: 0.4s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-12px) scale(1.02);
+}
+
+.feature-card h3 {
+    color: #02116f;
+    margin-bottom: 12px;
+}
+
+.workflow {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.workflow h2 {
+    font-size: 32px;
+    color: #3f2b96;
+}
+
+.steps {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.step {
+    padding: 16px 30px;
+    border-radius: 30px;
+    background: url('Expert\ Cluster\ Images/Expert_Cluster_Image_4.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 12px 30px rgba(95, 114, 255, 0.35);
+    transition: 0.3s;
+}
+
+.step:hover {
+    transform: scale(1.08);
+}
+
+.footer {
+    background: url('Expert\ Cluster\ Images/Expert_Cluster_Image_4.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}

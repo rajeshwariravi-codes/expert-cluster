@@ -1,0 +1,8 @@
+| Min | Max | Meaning                 |
+| --- | --- | ----------------------- |
+| 3   | Any | Experts with ≥ 3 years  |
+| Any | 7   | Experts with ≤ 7 years  |
+| 3   | 10  | Experts with 3–10 years |
+| Any | Any | All experts, no filter  |
+
+

@@ -1,0 +1,79 @@
+    @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Cinzel:wght@400..900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&family=Text+Me+One&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+    .Main-Content {
+        min-height: 100vh;
+    }
+
+    .Wrapper {
+        width: 100%;
+        max-width: 900px;
+        border-radius: 40px;
+        overflow: hidden;
+        padding: 20px 0px;
+        border-radius: 25px;
+        background-color: rgba(226, 178, 244, 0.5);
+        color: white;
+        border: none;
+        box-shadow: 0 10px 30px rgba(73, 11, 89, 0.15);
+        cursor: pointer;
+    }
+
+    .Header h1 {
+        font-family: "Cinzel";
+        color: #ffffffff;
+        font-size: clamp(2rem, 2.6vw, 2.4rem);
+    }
+
+    .Quote {
+        position: relative;
+        font-family: "Cormorant Upright";
+        font-weight: 500;
+        font-size: clamp(0.8rem, 1.4vw, 1.8rem);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .Quote::before,
+    .Quote::after {
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.6);
+        vertical-align: middle;
+        line-height: 0;
+        font-family: "Cinzel";
+    }
+
+    .Quote::before {
+        content: "“";
+    }
+
+    .Quote::after {
+        content: "”";
+    }
+
+    .btn {
+        width: 100%;
+        min-height: 60px;
+        background: linear-gradient(135deg,
+                rgba(219, 130, 241, 0.85) 0%,
+                rgba(160, 90, 210, 0.85) 45%,
+                rgba(135, 206, 235, 0.85) 100%);
+        color: #ffffffc5;
+        font-family: "Josefin Sans";
+        font-size: clamp(1rem, 1.6vw, 1.4rem);
+        border-radius: 0.4rem;
+        transition:
+            transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 0.35s ease;
+    }
+
+    .btn:hover,
+    .btn:active {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(190, 30, 225, 0.35);
+        color: #ffffff;
+    }
+
+    @media (max-width: 992px) {
+        .Body {
+            flex-wrap: wrap;
+        }
+    }
